@@ -1,0 +1,23 @@
+body
+  header
+    div
+      a href="/"  ManaScribe
+    div
+      a href="/subscriptions/new"  サービスの登録
+  h1.subscription_title aaa 
+  div
+    div
+      - @subscriptions.each do |subscription|
+        .subscriptions-index-item
+          =subscription.name 
+          =subscription.price 
+          - if subscription.price.present?
+            p 円
+          =subscription.date_start 
+          =subscription.date_end 
+          =subscription.remind 
+          =subscription.memo
+          a href="/subscriptions/edit"  サービスの編集
+          a href="/subscriptions/destroy"  サービスの削除 
+
+     

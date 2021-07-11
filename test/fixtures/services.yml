@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  name: MyString
+  logo: MyText
+  detail: MyText
+  homepage_link: MyText
+  unsubscription: MyText
+
+two:
+  id: 1
+  name: MyString
+  logo: MyText
+  detail: MyText
+  homepage_link: MyText
+  unsubscription: MyText

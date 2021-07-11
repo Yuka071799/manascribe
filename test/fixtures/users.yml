@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  admin: false
+  id: 1
+  user_name: MyString
+  email: MyString
+  password_digest: MyString
+  created_at: 2021-06-13 08:45:01
+  without: MyString
+  time: MyString
+  zone: MyString
+  updated_at: 2021-06-13 08:45:01
+  without: MyString
+  time: MyString
+  zone: MyString
+
+two:
+  admin: false
+  id: 1
+  user_name: MyString
+  email: MyString
+  password_digest: MyString
+  created_at: 2021-06-13 08:45:01
+  without: MyString
+  time: MyString
+  zone: MyString
+  updated_at: 2021-06-13 08:45:01
+  without: MyString
+  time: MyString
+  zone: MyString
