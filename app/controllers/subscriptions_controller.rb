@@ -29,7 +29,7 @@ class SubscriptionsController < ApplicationController
   end
 
   def update
-    @subscription = Subscription.find(params[:subscription_id])
+    @subscription = Subscription.find(params[:id])
 
     if @subscription.update(subscription_params)
       redirect_to "/subscriptions", notice: "サービス「#{@subscription.name}を更新しました。"

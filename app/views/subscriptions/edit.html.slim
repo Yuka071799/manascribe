@@ -1,2 +1,26 @@
-h1 Subscriptions#edit
-p Find me in app/views/subscriptions/edit.html.slim
+
+.container
+  .nav.justify-content-end 
+    = link_to '一覧へ戻る', subscriptions_path, class: 'botton_index btn'
+
+
+  = form_with model: @subscription, local: true do |f|
+    .form-group 
+      = f.label :name, '名前'
+      = f.text_field :name, class: 'form-control'
+    .form-group 
+      = f.label :price, '金額'
+      = f.text_field :price, class: 'form-control'
+    .form-group
+          = f.label :date_start, '契約開始日'
+          = f.date_select :date_start, class: 'form-control'
+    .form-group
+          = f.label :date_start, '契約更新日'
+          = f.date_select :date_end, class: 'form-control'
+    .form-group 
+      = f.label :remind, 'リマインド'
+      = f.text_field :remind, class: 'form-control'
+    .form-group 
+      = f.label :memo, 'memo'
+      = f.text_field :memo, class: 'form-control'
+    = f.submit '登録する', class: 'btn btn-registar-edit' 

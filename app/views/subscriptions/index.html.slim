@@ -1,23 +1,36 @@
 body
   header
+    
     div
-      a href="/"  ManaScribe
-    div
-      a href="/subscriptions/new"  サービスの登録
-  h1.subscription_title aaa 
+      a.btn.btn_registar_service href="/subscriptions/new"  サービスの登録
   div
-    div
+    table
+      tr
+        th サービス名
+        th 金額
+        th 契約開始日　　　　　　　
+        th 契約更新日　　　　　　
+        th メモ
+        th.table_edit 編集
+        th 削除
       - @subscriptions.each do |subscription|
         .subscriptions-index-item
-          =subscription.name 
-          =subscription.price 
-          - if subscription.price.present?
-            p 円
-          =subscription.date_start 
-          =subscription.date_end 
-          =subscription.remind 
-          =subscription.memo
-          a href="/subscriptions/edit"  サービスの編集
-          a href="/subscriptions/destroy"  サービスの削除 
+            tr 
+              td.detail 
+                = subscription.name 
+              td 
+                = subscription.price 
+                - if subscription.price.present?
+                  p 円
+              td 
+                = subscription.date_start
+              td 
+                = subscription.date_end 
+              td 
+                = subscription.memo
+              td
+                a.btn_edit.btn href="/subscriptions/#{subscription.id}/edit"  編集
+              td
+                a.btn_destroy.btn data-method="delete" href="/subscriptions/#{subscription.id}" 削除
 
      

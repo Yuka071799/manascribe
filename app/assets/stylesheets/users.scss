@@ -1,3 +1,22 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.container {
+    width:796px; margin:0 auto;
+}
+
+.form-group {
+    margin-top: 10px;
+}
+
+.btn-user-create {
+    margin-top: 10px;
+    background-color: #00cccc;
+    color:white;
+}
+
+.btn-back-to-index {
+    margin-top: 10px;
+    background-color: #006666;
+    color:white;
+}

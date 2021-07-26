@@ -1,2 +1,106 @@
 @import "bootstrap";
 @import "subscriptions";
+@import "users";
+
+.app-title {
+    background-color: #008b8b;
+    color: aliceblue;
+    padding: 10px;
+}
+
+.navbar-brand{
+    float: left;
+}
+
+.nav-link {
+    color:azure;
+    float: right;
+    background-color: burlywood;
+    border-radius: 100vh;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    transition: all 0.3s;
+    line-height: 0.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+  
+}
+
+.btn {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    border-radius: 0.5rem;
+}
+.container_top {
+    text-align:center;
+    width:796px; margin:0 auto;
+}
+
+
+.introduce_top {
+    margin-top: 200px;
+    display: block;
+    font-size: 2em;
+}
+
+.detail_top {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.btn_registar_user {
+    background-color: #00cccc;
+    color: white;
+    width: 45%;
+    height: 65px;
+    margin-right: 10px;
+    float:left;
+}
+
+.btn_login {
+    background-color: #00ffff;
+    color: white;
+    width: 45%;
+    height: 65px;
+    float:right;
+}
+
+//service_css
+.container_service {
+    margin: 100px 20px;
+}
+.password_service {
+    margin-top: 15px;
+}
+
+.btn_service {
+    margin-top: 15px;
+    background-color: #00ffff;
+    color: white;
+}
